@@ -1,0 +1,210 @@
+@font-face
+    font-family: 'HYWenHei'
+    font-style: normal
+    font-weight: normal
+    src: local('HYWenHei 85W'), url('zh-cn.ttf') format('ttf')
+
+@mixin font()
+    font-family: 'HYWenHei'
+    font-style: normal
+    font-weight: 400
+$txt: #0E2A3E
+
+*
+    margin: 0
+    padding: 0
+    box-sizing: border-box
+html
+    scrollbar-width: none
+
+body
+    background-color: #EBFFEF
+    overflow-x: hidden
+    -ms-overflow-style: none
+    background: linear-gradient(180deg, rgba(95, 201, 93, 0.92) 0%, #EBFFEF 52.61%, #02686E 95.32%)
+    // height: 5332px
+    display: flex
+    flex-direction: column
+    gap: 10em
+
+body::-webkit-scrollbar
+    display: none
+
+.hero
+
+    #bg
+        width: 100vw
+        background-repeat: no-repeat
+        background-size: cover
+
+    .hero_container
+        position: absolute
+        top: 0
+        display: flex
+        flex-direction: column
+        align-items: center
+        padding-top: 16em
+        padding-left: 16em
+        width: fit-content
+        gap: 1em
+
+        #logo
+            width: 463px
+            height: 173px
+a
+    text-decoration: none
+    color: black
+a:link
+    color: black
+a:visited 
+    color: black
+a:hover
+    color: red
+a:active
+    color: blue
+.btn
+    @include font
+    line-height: 29px
+    display: flex
+    align-items: center
+    justify-content: center
+    background-color: #FFC708
+    border-color: #D2A406
+    cursor: pointer
+
+#btn-sm
+    width: 249px
+    height: 71px
+    font-size: 24px
+    border-radius: 15px
+
+#h1
+    @include font
+    font-size: 3em
+    line-height: 60px
+    text-align: center
+    padding: 1em
+    color: $txt
+
+#subh1
+    font-family: 'Montserrat'
+    font-style: normal
+    font-weight: 500
+    font-size: 2em
+    line-height: 46px
+    text-align: center
+    color: $txt
+
+.mid-section
+    display: flex
+    justify-content: space-evenly
+    // margin-top: 6em
+
+    // flex: 1
+    .achievement
+        border: 1px solid
+        padding: 1em
+        border-radius: 25px
+        background: linear-gradient(197.88deg, #2CCAB7 1.19%, rgba(250, 231, 131, 0.53) 50.08%, #50EAB2 98.19%, #06F6A0 98.19%)
+        font-family: 'Montserrat'
+        font-style: normal
+        font-weight: 500
+        ul
+            list-style: none
+        .ac1
+            text-align: center
+            font-size: 2em
+            #dnld
+                color: #FFC708
+    .trailer
+        display: flex
+        flex-direction: column
+        gap: 0
+        #chibi
+            display: flex
+            justify-content: flex-end
+            padding-right:10px
+            .chibi
+                width: 120px
+                height: 75px
+        .frame
+            border: 1px solid black
+            height: 400px
+            width: 700px
+            border-radius: 25px
+
+.char
+    display: flex
+    justify-content: space-evenly
+    .ch
+        width: 500px
+        height: 600px
+        img
+            width: 491px
+            height: 571px
+    .features
+        border: 1px solid black
+        background-color: white
+        height: max-content
+        width: 500px
+        border-radius: 15px
+        margin-top: 3em
+        padding: 1em
+        display: flex
+        gap: .5em
+        flex-direction: column
+        .collapsible
+            background-color: #eee
+            color: #444
+            cursor: pointer
+            padding: 10px
+            width: 100%
+            border: none
+            text-align: left
+            outline: none
+            font-size: 20px
+            font-family: 'Montserrat'
+            font-style: normal
+            font-weight: 500
+            border-radius: 8px
+
+
+.active, .collapsible:hover
+    background-color: #ccc
+
+.content
+    padding: 0 25px
+    max-height: 0
+    overflow: hidden
+    transition: max-height 0.2s ease-out
+    background-color: #f1f1f1
+    font-family: 'Montserrat'
+    font-style: normal
+    font-weight: 200
+    color: $txt
+.collapsible:after
+    transition: 0.5s 
+    content: url('./arrow.png')
+    font-size: 13px
+    color: white
+    float: right
+    margin-left: 5px
+
+.active:after
+    transition: 0.5s 
+    transform: rotate(180deg)
+
+.cta
+    display: flex
+    flex-direction: column
+    align-items: center
+
+footer
+    background-color: black
+    width: 100%
+    height:100px
+    color: white
+    display: flex
+    justify-content: center
+    align-items: center
+
