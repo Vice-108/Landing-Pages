@@ -1,0 +1,10 @@
+main_h : HYWenHei - 40 h-196 w-457
+
+sub_h :	poppins - 24 fw-med w-457 h-108
+
+cta-h :  HYWenHei - 36 ta-center h-88 w-456 
+
+btn font-HYWenHei ta-center h-71 w-267 bgcolor-#FFC708 border 1px solid #D2A406
+
+main div: l-142 t- 118
+logo - w209 h94
