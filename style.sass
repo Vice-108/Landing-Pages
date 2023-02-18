@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap')
+@font-face 
+    font-family: 'HYWenHei 85W'
+    font-style: normal
+    font-weight: normal
+    src: local('HYWenHei 85W'), url('zhcn.woff') format('woff')
+
+*
+    margin: 0
+    padding: 0
+    box-sizing: border-box
+    font-family: 'Poppins', sans-serif
+body
+    overflow-y: auto
+    background-color: limegreen
+header
+    z-index: 999
+    position: relative
+    width: 100%
+    display: flex
+    justify-content: space-between
+    align-items: center
+    padding: 0 250px
+    transition: 0.5s ease
+
+    a #logo
+        // position: absolute
+        width: 120px
+        height: 65px
+    .navigation
+        position: relative
+
+        .navigation-items
+            a
+                position: relative
+                color: #1f1c1c 
+                font-size: 1.4em
+                font-weight: 500
+                text-decoration: none
+                margin-left: 30px
+                transition: 0.3s ease
+
+            a:before
+                content:''
+                position: absolute
+                background:#00FFD1
+                width: 0
+                height: 2px
+                bottom: 0
+                left: 0
+                transition: 0.3s ease
+
+            a:hover:before
+                width: 100%
+section
+    position: relative
+    width: 1024px
+    height: auto
+    padding:2em 15px 0
+    background: rgba(255, 255, 255, 0.25)
+    // box-shadow: 23px 0 51px 17px rgba(0, 0, 0, 0.25)
+    border-radius: 10px 10px 0 0
+    margin-left: auto
+    margin-right: auto
+    display: flex
+    gap:5em
+    
+    .col1
+
+        .i1
+            display: flex
+            flex-direction: column
+            align-items: center
+            justify-content: center
+        h2
+            width: 456px
+            height: 88px
+            margin-top: 0em
+            // line-height: 43.81px
+            font-size: 35px
+            text-align: center
+            color: #1f1c1c
+            font-family: 'HYWenHei 85W'
+        span
+            margin-top: 25px
+            background-color: #ffc708
+            height: 41px
+            width: 145px
+            border: 1px solid #D2A406
+            border-radius: 5px
+            display: flex
+            align-items: center
+            justify-content: center
+            text-align: center
+            cursor: pointer
+            margin-bottom: 1em
+            
+            a
+                text-decoration: none
+                font-family: 'HYWenHei'
+                font-style: normal
+                font-weight: 400
+                font-size: 14px
+                line-height: 29px
+                color: black
+            a:hover
+                color: red
+
+    .col2
+
+        h1
+            height: max-content
+            margin-bottom: 0.3em
+            width: auto
+            font-family: 'HYWenHei 85W'
+            font-size: 2.5em
+            color: #1f1c1c
+        h3
+            color: #1f1c1c
+            font-size: 1.4em
+            font-weight: lighter
+            line-height: 25px
+            margin-bottom: 1em
+        .achive
+            padding: 0.5em
+            width: 250px
+            height: max-content
+            background: rgba(255, 255, 255, 0.25)
+            border-radius: 5px
+            margin-bottom: 1em
+            .dwnld
+                text-align: center
+                font-family: 'HYWenHei'
+                font-style: normal
+                font-weight: 400
+                font-size: 25px
+                line-height: 29px
+                color: #1f1c1c
+                span
+                    font-weight: 800
+                    color: #FFC708
+
+            .other
+                font-size: 1em
+                color: #1f1c1c
+                margin-left: 1em
+
+.chars
+    display: flex
+    justify-content: center
+    align-items: center
+    position: relative
+    margin: auto
+    img
+        margin-bottom: 1em
+.img-slider
+    z-index: 000
+    position: absolute
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
+    object-fit: cover
+    // clip-path: circle(0.3% at 0 48%)
+
+.slider-nav
+    z-index: 888
+    position: relative
+    display: flex
+    justify-content: center
+    align-items: center
+    transform: translateY(40px)
+    margin-bottom: 12px
+    // margin-top: 26px
+    .nav-btn
+        width: 12px
+        height: 12px
+        background: white
+        border-radius: 50%
+        cursor: pointer
+        box-shadow: 0 0 2px rgba(255, 255, 255,0.5)
+        transition: 0.3 ease
+    .nav-btn.active
+        background: #000
+    .nav-btn:not(:last-child)
+        margin-right: 20px
+
+    .nav-btn:hover
+        transform: scale(1.4)
+
+
+
+
+
+
